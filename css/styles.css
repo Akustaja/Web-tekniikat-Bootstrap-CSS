@@ -1,0 +1,86 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
+.container-fluid {
+  background-color: #07d3c5;
+}
+
+.nav {
+  background-color: #539987;
+  height: 7.5vh;
+}
+
+.row:first-child, .row:last-child {
+  height: 7.5vh;
+  width: 100vw;
+  background-color: #539987;
+  color: #000000;
+}
+
+.content {
+  height: 85vh;
+  width: 100vw;
+  background-color: #7affc7;
+  color: #000000;
+}
+
+.article {
+  text-align: center;
+  margin-top: 12vh;
+}
+.article > h2 {
+  font-weight: bolder;
+}
+.article > h2 ~ p {
+  margin-top: 50px;
+}
+.article + div {
+  padding-top: 32vh;
+  background-color: #615756;
+  color: #539987;
+  font-size: 2em;
+}
+.article + div > p:hover {
+  color: #000000;
+}
+
+[type=hover] {
+  font-size: 1.5rem;
+  padding-top: 7.5vh;
+}
+
+.btn {
+  margin: 80vh 0px 0px 10vw;
+}
+
+.btns {
+  border: 2px solid #000000;
+}
+
+.red {
+  background-color: red;
+}
+
+.white {
+  background-color: white;
+}
+
+.green {
+  background-color: green;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.accordion {
+  padding: 0px;
+  margin: 0px;
+}
+
+/*# sourceMappingURL=styles.css.map */

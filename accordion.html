@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap & CSS -tehtävä</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous" defer></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css\styles.css">
+  </head>
+  <body>
+    <div class="container-fluid">
+        <div class="row">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary py-0">
+                <div class="container-fluid nav">
+                  <a class="navbar-brand p-3">Nav</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                      <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                      <a class="nav-link" href="buttons.html">Buttons</a>
+                      <a class="nav-link active" href="accordion.html">Accordion</a>
+                      
+                    </div>
+                  </div>
+                </div>
+              </nav>
+        </div>
+        <div class="row content">
+            <div class="col-sm-12">
+                <div class="accordion">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                          Joy
+                        </button>
+                      </h2>
+                      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            The word joy refers to the emotion evoked by well-being, success, or good fortune, and is typically associated with feelings of intense, long lasting happiness. <br>
+                            Dictionary definitions of joy typically include a sense of it being a reaction to an external happening, e.g. a physical sensation experienced, or receiving good news. <br>
+                            "When the mind is pure, joy follows like a shadow that never leaves.” - Gautama Buddha <br>
+                            <a href="https://en.wikipedia.org/wiki/Joy">Wikipedia</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                          Grief
+                        </button>
+                      </h2>
+                      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Grief is the response to loss, particularly to the loss of someone or some living thing that has died, to which a bond or affection was formed. <br>
+                            Loss can be categorized as either physical or abstract; physical loss is related to something that the individual can touch or measure, such as losing a spouse through death, <br> while other types of loss are more abstract, possibly relating to aspects of a person's social interactions. <br>
+                            <a href="https://en.wikipedia.org/wiki/Grief">Wikipedia</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                          Anger
+                        </button>
+                      </h2>
+                      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Anger, also known as wrath or rage, is an intense emotional state involving a strong uncomfortable and non-cooperative response to a perceived provocation, hurt or threat. <br>
+                            Anger can have many physical and mental consequences. The external expression of anger can be found in facial expressions, body language, physiological responses, and at times public acts of aggression. <br>
+                            Facial expressions can range from inward angling of the eyebrows to a full frown. <br>
+                            <a href="https://en.wikipedia.org/wiki/Anger">Wikipedia</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                
+            </div>
+        </div>
+
+    </div>
+  </body>
+</html>

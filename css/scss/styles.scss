@@ -1,0 +1,118 @@
+
+//Global & index css
+
+
+//Palette
+$dark: #615756;
+$dgreen: #539987;
+$lgreen: #7affc7;
+$lblue: #07d3c5;
+
+
+//Removes any extra visual effects from text such as lists and links
+@mixin plainTxt {
+    color: #000000;
+    text-decoration: none;
+    list-style: none;
+    font-size: 1em;
+}
+
+//Easy basic setup for rows
+@mixin gridRow ($height, $width, $backgroundcolor, $textcolor) {
+    height: $height;
+    width: $width;
+    background-color: $backgroundcolor;
+    color: $textcolor;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.container-fluid{
+    background-color: $lblue;
+}
+
+.nav{
+    background-color: $dgreen;
+    height: 7.5vh;
+
+}
+
+.row:first-child, .row:last-child{
+    @include gridRow(7.5vh, 100vw, $dgreen, #000000);
+}
+
+.content{
+    @include gridRow(85vh, 100vw, $lgreen, #000000);
+    
+}
+
+.article{
+    text-align: center;
+    margin-top: 12vh;
+
+    >h2{
+        font-weight: bolder;
+
+        ~p {
+            margin-top: 50px;
+        }
+    }    
+    +div{
+        padding-top: 32vh;
+        background-color: #615756;
+        color: $dgreen;
+        font-size: 2em;
+
+        >p:hover{
+            color: #000000;
+        }
+    }
+}
+
+[type="hover"] {
+    font-size: 1.5rem;
+    padding-top: 7.5vh;
+}
+
+
+
+//Buttons css
+
+.btn {
+    margin: 80vh 0px 0px 10vw
+}
+
+.btns {
+    border: 2px solid #000000;
+}
+
+.red{
+    background-color: red;
+}
+
+.white{
+    background-color: white;
+}
+
+.green{
+    background-color: green;
+}
+
+.blue{
+    background-color: blue;
+}
+
+
+
+//Accordion css
+
+.accordion {
+    padding: 0px;
+    margin: 0px;
+}
